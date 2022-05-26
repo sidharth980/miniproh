@@ -21,7 +21,7 @@ static char alph[] = "abcdefg";
 
 char retAlph(char arr[]){
   int lp = 0;
-  for(lp = 0;lp<3;lp++){
+  for(lp = 0;lp<7;lp++){
       if(morsestr[lp]==arr)
         return(alph[lp]);
   }
