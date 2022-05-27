@@ -34,13 +34,16 @@ void setup() {
 
 void loop(){
     //Read and assign boolean value for morse
+    delay(500);
     val = analogRead(mor);
+    Serial.println(val);
     if (val>=100)
     q = 1;
     else
     q = 0;
     //Read and assign boolean value for seperator
     val = analogRead(sep);
+    Serial.println(val);
     if (val>=100)
     p = 1;
     else
