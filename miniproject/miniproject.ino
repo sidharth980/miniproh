@@ -17,13 +17,13 @@ static String morsestr[] = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "..
 ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "!"
 };
 
-static char alph = "abcdefg";
+static char alph[] = "abcdefg";
 
 char retAlph(char arr[]){
   int lp = 0;
   for(lp = 0;lp<3;lp++){
       if(morsestr[lp]==arr)
-        return(alph[lp])
+        return(alph[lp]);
   }
     
 }
@@ -77,4 +77,3 @@ void loop(){
     Serial.println(morse);
     Serial.println(letter);
 }
-
